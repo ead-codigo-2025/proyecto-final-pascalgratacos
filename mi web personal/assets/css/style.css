@@ -1,0 +1,175 @@
+/* -------------------------------------------------------------------------- */
+/* 1. RESET Y CONFIGURACIÓN BASE */
+/* -------------------------------------------------------------------------- */
+
+/* Aplica la fuente Inter a todo el body (cumple requisito de tipografía) */
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0; /* Elimina el margen predeterminado del navegador */
+    padding: 0;
+    box-sizing: border-box; /* Modelo de caja más intuitivo */
+    background-color: #FFEAEA; /* Un color de fondo suave */
+    color: #333; /* Color de texto base */
+    line-height: 1.6;
+   
+}
+
+/* -------------------------------------------------------------------------- */
+/* 2. ESTILOS DE NAVEGACIÓN (HEADER/NAV) */
+/* -------------------------------------------------------------------------- */
+
+header {
+    background-color: #F5CBCB; /* Fondo salmon para el encabezado */
+    box-shadow: 0 2px 4px C75B7A(0, 0, 0, 0.1); /* Sombra ligera */
+    padding: 1rem 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between; /* Separa el logo del menú */
+    align-items: center;
+    max-width: 1100px; /* Ancho máximo para el contenido */
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Estilos básicos para el menú (UL) */
+nav ul {
+    list-style: none; /* Quita los puntos de la lista */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Coloca los elementos en línea */
+}
+
+nav ul li a {
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    color: #921A40;
+    margin-left: 20px;
+    padding: 5px 10px;
+    transition: color 0.4s; /* Transición suave al pasar el ratón */
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #C75B7A; /* Color al pasar el ratón */
+}
+
+/* -------------------------------------------------------------------------- */
+/* 3. ESTILOS DE MAIN Y SECCIONES (HERO) */
+/* -------------------------------------------------------------------------- */
+
+/* 3. ESTILOS DE ESTRUCTURA PRINCIPAL (MAIN, HEADER, FOOTER) */
+
+/* Esto asegura que el contenido de la página se vea centrado y con ancho limitado */
+header nav, /* Seleccionamos el nav dentro de header para centrar el menú */
+main,
+footer {
+    max-width: 1200px; /* Usa el mismo ancho que definimos para main */
+    margin: 0 auto; /* Centra el bloque horizontalmente */
+    padding: 0 20px; /* Agrega un padding a los lados para que no se pegue al borde en móviles */
+}
+
+/* Modificamos el estilo de main para incluir el margen superior e inferior */
+main {
+    margin: 40px auto; /* Esto le da margen arriba y abajo */
+}
+
+/* Estilos de pie de página */
+footer {
+    padding: 20px;
+    margin-top: 50px; /* Le da espacio arriba */
+    text-align: center; /* Opcional: Centra el texto DENTRO del footer centrado */
+    border-top: 1px solid #ccc; /* Línea divisoria suave */
+    background-color: #F4D9D0;
+}
+
+
+
+#hero {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #F4D9D0; /* Un gris claro para la sección hero */
+    border-radius: 8px;
+    margin-bottom: 40px;
+}
+
+#hero h2 {
+    font-size: 2.5rem;
+    color: #921A40;
+    margin-bottom: 15px;
+}
+
+/* Estilos para el botón CTA */
+.cta-button {
+    display: inline-block;
+    background-color: #921A40;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #921A40;
+}
+
+/*
+ * ----------------------------------------
+ * ESTILOS PARA EL BOTÓN EN LA PÁGINA PORTAFOLIO
+ * ----------------------------------------
+ */
+
+.boton-proyecto {
+    /* Apariencia básica del botón */
+    background-color: #921A40; /* Un color fuerte para destacar */
+    color: white; /* Texto blanco */
+    padding: 15px 30px;
+    
+    /* Forma y tipografía */
+    text-align: center;
+    text-decoration: none; /* Elimina el subrayado por defecto de los enlaces */
+    display: inline-block; /* Permite aplicar ancho y alto, comportándose como bloque */
+    border-radius: 8px; /* Esquinas redondeadas */
+    font-size: 1.1em;
+    font-weight: bold;
+    margin: 20px 0;
+    
+    /* Transición: Mejora la Usabilidad dando un efecto suave al hover */
+    transition: background-color 0.3s ease;
+}
+
+/* Efecto al pasar el ratón (Hover) */
+.boton-proyecto:hover {
+    background-color: #921A40; /* Color más oscuro cuando el usuario pasa el ratón */
+    cursor: pointer; /* Muestra el puntero para indicar que es clickeable */
+}
+
+
+
+/* Ejemplo de semántica: Estilo para la navegación principal (Header) */
+header {
+    background-color: #F4D9D0; /* Color de fondo de tu barra de navegación */
+    padding: 20px;
+}
+
+/* ----------------------------------------------------
+ * ESTILO PARA UNIFICAR EL TAMAÑO DE LAS IMÁGENES
+ * ----------------------------------------------------
+ */
+.mismo-tamano {
+    /* AJUSTE: Aumentamos el tamaño de 300px a 500px de ancho */
+    width: 500px;  
+    height: 350px; /* Ajuste proporcional de la altura para mejor visualización */
+    
+    /* AJUSTE: Aumentamos la separación de 10px a 30px */
+    margin: 30px auto; /* 'auto' ayuda a centrar si 'display: block' está activado */
+    
+    object-fit: cover; 
+    
+    /* Estilos estéticos opcionales (mantenidos) */
+    border: 1px solid #C75B7A;
+    display: block; /* Mantenemos 'block' para que 'margin: auto' funcione */
+}
